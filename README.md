@@ -1,6 +1,6 @@
-# Personal Finance Tracker
+﻿# MønieGlitçh
 
-Personal Finance Tracker is a web application that helps you manage your finances effectively. With this application, you can track your income and expenses, set budgets, and gain better control over your financial health. 
+MønieGlitçh is a web application that helps you manage your finances effectively. With this application, you can track your income and expenses, set budgets, and gain better control over your financial health. 
 
 <!-- Add your app screenshot here -->
 
@@ -38,4 +38,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any inquiries or questions, please open an issue in this repository.
 
-Enjoy managing your finances with Personal Finance Tracker!
+Enjoy managing your finances with MønieGlitçh!
