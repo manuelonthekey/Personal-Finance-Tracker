@@ -1195,3 +1195,56 @@ function showSearchNotification(message, type = 'info') {
     }, 300);
   }, 3000);
 }
+
+// Add interaction listeners for the Premium Travel Dashboard Style layout
+document.addEventListener('DOMContentLoaded', function() {
+  // Segmented Navigation inside Hero
+  const segmentedButtons = document.querySelectorAll('.segmented-nav button');
+  segmentedButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      segmentedButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+    });
+  });
+
+  // Close AI Assistant Panel
+  const closeAssistantBtn = document.querySelector('.assistant-header .icon-btn.small');
+  const assistantPanel = document.querySelector('.assistant-panel');
+  if (closeAssistantBtn && assistantPanel) {
+    closeAssistantBtn.addEventListener('click', () => {
+      assistantPanel.style.opacity = '0';
+      assistantPanel.style.transform = 'translateY(20px)';
+      setTimeout(() => {
+        assistantPanel.style.display = 'none';
+      }, 300);
+    });
+  }
+
+  // Interactive Map Pins / Markers
+  const mapMarkers = document.querySelectorAll('.map-marker');
+  mapMarkers.forEach(marker => {
+    marker.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mapMarkers.forEach(m => m.classList.remove('active'));
+      marker.classList.add('active');
+    });
+  });
+
+  // Assistant input field helper
+  const chatInput = document.querySelector('.assistant-input input');
+  const sendBtn = document.querySelector('.send-btn');
+  if (chatInput && sendBtn) {
+    sendBtn.addEventListener('click', () => {
+      const text = chatInput.value.trim();
+      if (text) {
+        showNotification(`AI Assistant is analyzing: "${text}"`, 'success');
+        chatInput.value = '';
+      }
+    });
+    chatInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        sendBtn.click();
+      }
+    });
+  }
+});

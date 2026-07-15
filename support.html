@@ -1,237 +1,321 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzBmMDA4MSIvPgo8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMiIgZmlsbD0iI2ZmOGMwMCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTEwIDEySDIyVjE4SDEwVjEyWiIgZmlsbD0iI2ZmZmZmZiIvPgo8Y2lyY2xlIGN4PSIxNiIgY3k9IjE0IiByPSIxLjUiIGZpbGw9IiMwZjAwODEiLz4KPHBhdGggZD0iTTE0IDI0QzE0IDI2LjIwOTEgMTUuNzkwOSAyOCAxOCAyOEMyMC4yMDkxIDI4IDIyIDI2LjIwOTEgMjIgMjQiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>MønieGlitçh Support - A Personal Finance App</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
+  <script src="https://unpkg.com/feather-icons"></script>
+  
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="support.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
-  <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <title>MønieGlitçh - A Personal Finance App</title>
 </head>
-
 <body>
-  <!-- <header class="header-part"> -->
-    <nav>
-      <div class="navbar">
-        <a href="./index.html" class="logo"
-          ><i class="fas fa-chart-line"></i> MønieGlitçh</a
-        >
-        <ul class="nav-links">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./index.html#tracker">Use Tracker</a></li>
-          <li><a href="./index.html#how-it-works">How it Works</a></li>
-          <li><a href="./index.html#invite">Community</a></li>
-          <li><a href="./support.html" class="active">Support</a></li>
-        </ul>
-        
-        <!-- Search Bar -->
-        <div class="search-container">
-          <div class="search-bar">
-            <i class="fas fa-search search-icon"></i>
-            <input type="text" id="search-input" placeholder="Search" class="search-input">
-            <div class="search-shortcut">
-              <span class="shortcut-key">⌘</span>
-              <span class="shortcut-key">K</span>
-              <span class="shortcut-separator">/</span>
-              <span class="shortcut-key">Ctrl</span>
-              <span class="shortcut-key">K</span>
-            </div>
-          </div>
-        </div>
-        <div class="buttons">
-          <a href="./login.html" class="btn-head"
-            ><i class="fas fa-sign-in-alt"></i> Log In</a
-          >
-          <a href="./sign-up.html" class="btn-head"
-            ><i class="fas fa-user-plus"></i> Sign Up</a>
-          
-        </div>
-        <div class="menu-toggle" id="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-      </div>
-    </nav>
-    <!-- Support Hero Section -->
-    <section class="support-hero">
-      <div class="support-hero-content">
-        <div class="support-hero-text">
-          <h1>How can we help you?</h1>
-          <p>Get the support you need to make the most of your finance tracking experience. Our team is here to help you succeed.</p>
-          
-          <div class="support-benefits">
-            <div class="benefit-item">
-              <i class="fas fa-clock"></i>
-              <span>24/7 Support</span>
-            </div>
-            <div class="benefit-item">
-              <i class="fas fa-shield-alt"></i>
-              <span>Secure & Private</span>
-            </div>
-            <div class="benefit-item">
-              <i class="fas fa-users"></i>
-              <span>Expert Team</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="support-hero-image">
-          <div class="floating-card support-card-1">
-            <i class="fas fa-headset"></i>
-            <h3>Live Chat</h3>
-            <p>Get instant help</p>
-          </div>
-          <div class="floating-card support-card-2">
-            <i class="fas fa-envelope"></i>
-            <h3>Email Support</h3>
-            <p>Detailed responses</p>
-          </div>
-          <div class="floating-card support-card-3">
-            <i class="fas fa-question-circle"></i>
-            <h3>FAQ</h3>
-            <p>Quick answers</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Support Form Section -->
-    <section class="support-container">
-      <div class="support-form-wrapper">
-        <div class="support-form-header">
-          <h2>Send us a message</h2>
-          <p>Fill out the form below and we'll get back to you within 24 hours</p>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- 1. Navigation Rail -->
+  <nav class="nav-rail" role="navigation" aria-label="Main navigation">
+    <div class="nav-top">
+      <div class="nav-logo">
+        <span class="material-symbols-outlined">query_stats</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html" aria-label="Home">
+            <span class="material-symbols-outlined">home</span>
+            <span class="nav-label">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="./index.html#tracker" aria-label="Tracker">
+            <span class="material-symbols-outlined">account_balance_wallet</span>
+            <span class="nav-label">Tracker</span>
+          </a>
+        </li>
+        <li>
+          <a href="./index.html#how-it-works" aria-label="How it works">
+            <span class="material-symbols-outlined">info</span>
+            <span class="nav-label">Features</span>
+          </a>
+        </li>
+        <li>
+          <a href="./index.html#invite" aria-label="Community">
+            <span class="material-symbols-outlined">group</span>
+            <span class="nav-label">Community</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="./support.html" aria-label="Support">
+            <span class="material-symbols-outlined">help</span>
+            <span class="nav-label">Support</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-bottom">
+      <div class="nav-utilities">
+        <span class="material-symbols-outlined">settings</span>
+        <span class="nav-label">Settings</span>
+      </div>
+      <div class="user-avatar">
+        <img src="https://ui-avatars.com/api/?name=User&background=1B6B5C&color=fff" alt="User">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Application Wrapper -->
+  <main class="app-main" id="main-content">
+    
+    <!-- 2. Workspace Header -->
+    <header class="workspace-header">
+      <div class="header-left">
+        <span class="context-title">MønieGlitçh</span>
+        <span class="material-symbols-outlined divider">chevron_right</span>
+        <span class="workspace-name">Support Desk</span>
+      </div>
+      
+      <div class="header-center">
+        <div class="search-bar">
+          <span class="material-symbols-outlined">search</span>
+          <input type="text" id="search-input" placeholder="Search FAQs, support tickets..." aria-label="Search support">
+          <span class="shortcut">⌘K</span>
         </div>
+      </div>
+      
+      <div class="header-right">
+        <button class="icon-btn" aria-label="Notifications"><span class="material-symbols-outlined">notifications</span></button>
+        <button class="primary-btn" onclick="document.getElementById('fullname').focus()"><span class="material-symbols-outlined">mail</span> Send Message</button>
         
-        <form class="modern-support-form" action="/support" method="post">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fullname">
-                <i class="fas fa-user"></i>
-                Full Name <span>*</span>
-              </label>
-              <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+        <!-- Toggle button for mobile layouts to avoid JS crash -->
+        <div id="menu-toggle" style="display:none;"><i class="fas fa-bars"></i></div>
+      </div>
+    </header>
+
+    <!-- Scrollable Content Area -->
+    <div class="content-scroll">
+      <div class="content-grid">
+        
+        <!-- 3. Large Immersive Editorial Hero -->
+        <section class="hero-section">
+          <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2000&auto=format&fit=crop" alt="Support Desk">
+            <div class="hero-overlay"></div>
+          </div>
+          
+          <div class="hero-content">
+            <div class="metadata-tags">
+              <span class="tag">Help Center</span>
+              <span class="tag"><span class="material-symbols-outlined text-icon">support_agent</span> 24/7 Support</span>
+            </div>
+            <h1 class="hero-title">How can we help you?</h1>
+            <p class="hero-desc">Get the support you need to make the most of your finance tracking experience. Our team is here to help you succeed.</p>
+            
+            <div class="support-benefits-modern">
+              <div class="benefit-item-modern">
+                <span class="material-symbols-outlined text-icon">schedule</span>
+                <span>24/7 Assistance</span>
+              </div>
+              <div class="benefit-item-modern">
+                <span class="material-symbols-outlined text-icon">lock</span>
+                <span>Secure & Private</span>
+              </div>
+              <div class="benefit-item-modern">
+                <span class="material-symbols-outlined text-icon">diversity_3</span>
+                <span>Expert Guidance</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="floating-controls">
+            <a href="./index.html" class="icon-btn glass" title="Back to Dashboard"><span class="material-symbols-outlined">arrow_back</span></a>
+          </div>
+        </section>
+
+        <!-- 4. Floating Quick Contact Info (matches assistant-panel layout) -->
+        <aside class="assistant-panel">
+          <div class="assistant-header">
+            <span class="material-symbols-outlined icon purple-icon">contact_support</span>
+            <h3>Quick Support Info</h3>
+          </div>
+          <div class="assistant-body">
+            <p class="chat-text">Need immediate help? Feel free to contact our billing or technical support departments directly.</p>
+            <div class="suggestion-chips">
+              <a href="mailto:support@financetracker.com" class="chip" style="text-decoration:none; display:flex; align-items:center; gap:8px;">
+                <span class="material-symbols-outlined" style="font-size:16px;">mail</span>
+                support@financetracker.com
+              </a>
+              <a href="tel:+15551234567" class="chip" style="text-decoration:none; display:flex; align-items:center; gap:8px;">
+                <span class="material-symbols-outlined" style="font-size:16px;">phone</span>
+                +1 (555) 123-4567
+              </a>
+              <div class="chip" style="display:flex; align-items:center; gap:8px;">
+                <span class="material-symbols-outlined" style="font-size:16px;">pin_drop</span>
+                New York, NY
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- 5. Analytics Grid Style Support Options -->
+        <section class="analytics-workspace">
+          
+          <!-- Live Chat Card -->
+          <div class="card small support-option-card">
+            <div class="card-head">
+              <span class="material-symbols-outlined">forum</span>
+              <h4>Live Chat</h4>
+            </div>
+            <div class="card-metric" style="font-size:24px;">Instant</div>
+            <p class="card-meta">Get help from our team right away via browser chat.</p>
+          </div>
+
+          <!-- Email Support Card -->
+          <div class="card small support-option-card">
+            <div class="card-head">
+              <span class="material-symbols-outlined">mail</span>
+              <h4>Email Tickets</h4>
+            </div>
+            <div class="card-metric" style="font-size:24px;">&lt; 24 Hours</div>
+            <p class="card-meta">Submit a ticket for detailed responses on technical issues.</p>
+          </div>
+
+          <!-- FAQ Card -->
+          <div class="card small support-option-card">
+            <div class="card-head">
+              <span class="material-symbols-outlined">help_center</span>
+              <h4>FAQ Section</h4>
+            </div>
+            <div class="card-metric" style="font-size:24px;">Self-Help</div>
+            <p class="card-meta">Read documentation and quick answers to common questions.</p>
+          </div>
+
+          <!-- Modern Support Form Card -->
+          <div class="card wide support-form-card">
+            <div class="card-head">
+              <span class="material-symbols-outlined">rate_review</span>
+              <h4>Send us a message</h4>
             </div>
             
-            <div class="form-group">
-              <label for="email">
-                <i class="fas fa-envelope"></i>
-                Email Address <span>*</span>
-              </label>
-              <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            <form class="modern-support-form" action="/support" method="post">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullname">
+                    <span class="material-symbols-outlined">person</span>
+                    Full Name <span>*</span>
+                  </label>
+                  <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">
+                    <span class="material-symbols-outlined">mail</span>
+                    Email Address <span>*</span>
+                  </label>
+                  <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">
+                  <span class="material-symbols-outlined">label</span>
+                  Subject <span>*</span>
+                </label>
+                <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+              </div>
+              
+              <div class="form-group">
+                <label for="priority">
+                  <span class="material-symbols-outlined">priority_high</span>
+                  Priority Level
+                </label>
+                <select id="priority" name="priority">
+                  <option value="low">Low - General question</option>
+                  <option value="medium" selected>Medium - Need assistance</option>
+                  <option value="high">High - Urgent issue</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="query">
+                  <span class="material-symbols-outlined">mode_comment</span>
+                  Message <span>*</span>
+                </label>
+                <textarea name="query" id="query" required placeholder="Describe your issue or question in detail..."></textarea>
+              </div>
+              
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" required>
+                  <span class="checkmark"></span>
+                  I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                </label>
+              </div>
+              
+              <button type="submit" class="support-btn">
+                <span class="material-symbols-outlined" style="font-size:18px;">send</span>
+                Send Message
+              </button>
+            </form>
+          </div>
+
+        </section>
+
+      </div>
+
+      <!-- Footer moved inside scroll container -->
+      <footer role="contentinfo">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <div class="footer-logo">
+                <i class="fas fa-chart-line"></i>
+                <h3>MønieGlitçh</h3>
+              </div>
+              <p class="footer-description">
+                Take control of your finances with our comprehensive personal finance tracking tool. Manage your income, expenses, and financial goals effortlessly.
+              </p>
+              <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul class="footer-links">
+                <li><a href="./index.html#tracker">Use Tracker</a></li>
+                <li><a href="./index.html#how-it-works">How it Works</a></li>
+                <li><a href="./index.html#invite">Community</a></li>
+                <li><a href="./support.html">Support</a></li>
+              </ul>
             </div>
           </div>
           
-          <div class="form-group">
-            <label for="subject">
-              <i class="fas fa-tag"></i>
-              Subject <span>*</span>
-            </label>
-            <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+          <div class="footer-bottom">
+            <div class="footer-bottom-content">
+              <p>&copy; 2026 MønieGlitçh. All rights reserved.</p>
+            </div>
           </div>
-          
-          <div class="form-group">
-            <label for="priority">
-              <i class="fas fa-exclamation-triangle"></i>
-              Priority Level
-            </label>
-            <select id="priority" name="priority">
-              <option value="low">Low - General question</option>
-              <option value="medium" selected>Medium - Need assistance</option>
-              <option value="high">High - Urgent issue</option>
-            </select>
-          </div>
-          
-          <div class="form-group">
-            <label for="query">
-              <i class="fas fa-comment-alt"></i>
-              Message <span>*</span>
-            </label>
-            <textarea name="query" id="query" required placeholder="Describe your issue or question in detail..."></textarea>
-          </div>
-          
-          <div class="checkbox-group">
-            <label class="checkbox-label">
-              <input type="checkbox" required>
-              <span class="checkmark"></span>
-              I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
-            </label>
-          </div>
-          
-          <button type="submit" class="support-btn">
-            <i class="fas fa-paper-plane"></i>
-            Send Message
-          </button>
-        </form>
-        
-        <div class="support-footer">
-          <p>Need immediate help? <a href="mailto:support@financetracker.com">Email us directly</a> or call <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
         </div>
-      </div>
-    </section>
+      </footer>
 
-<footer>
-  <div class="footer-container">
-    <div class="footer-content">
-      <div class="footer-section">
-        <div class="footer-logo">
-          <i class="fas fa-chart-line"></i>
-          <h3>MønieGlitçh</h3>
-        </div>
-        <p class="footer-description">
-          Take control of your finances with our comprehensive personal finance tracking tool. 
-          Manage your income, expenses, and financial goals effortlessly.
-        </p>
-        <div class="social-links">
-          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-        </div>
-      </div>
-      
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="./index.html#tracker">Use Tracker</a></li>
-          <li><a href="./index.html#how-it-works">How it Works</a></li>
-          <li><a href="./index.html#invite">Community</a></li>
-          <li><a href="./support.html">Support</a></li>
-        </ul>
-      </div>
-      
-      <div class="footer-section">
-        <h4>Resources</h4>
-        <ul class="footer-links">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Help Center</a></li>
-        </ul>
-      </div>
-      
-      <div class="footer-section">
-        <h4>Contact Info</h4>
-        <div class="contact-info">
-          <p><i class="fas fa-envelope"></i> support@financetracker.com</p>
-          <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-          <p><i class="fas fa-map-marker-alt"></i> New York, NY</p>
-        </div>
-      </div>
     </div>
-    
-    <div class="footer-bottom">
-      <div class="footer-bottom-content">
-        <p>&copy; 2025 MønieGlitçh. All rights reserved.</p>
-        <!-- Developer Credit Removed -->
-      </div>
-    </div>
-  </div>
-</footer>
-<script>feather.replace();</script>
-<script src="script.js"></script>
-<script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+  </main>
+
+  <script>
+    feather.replace();
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>

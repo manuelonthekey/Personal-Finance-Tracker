@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Travel Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Navigation Rail -->
+  <nav class="nav-rail">
+    <div class="nav-top">
+      <div class="nav-logo">
+        <span class="material-symbols-outlined">explore</span>
+      </div>
+      <ul class="nav-links">
+        <li class="active"><span class="material-symbols-outlined">home</span></li>
+        <li><span class="material-symbols-outlined">map</span></li>
+        <li><span class="material-symbols-outlined">flight</span></li>
+        <li><span class="material-symbols-outlined">hotel</span></li>
+        <li><span class="material-symbols-outlined">bookmarks</span></li>
+      </ul>
+    </div>
+    <div class="nav-bottom">
+      <div class="nav-utilities">
+        <span class="material-symbols-outlined">settings</span>
+      </div>
+      <div class="user-avatar">
+        <img src="https://ui-avatars.com/api/?name=User&background=1A1F2E&color=fff" alt="User">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Application Wrapper -->
+  <main class="app-main">
+    
+    <!-- 2. Workspace Header -->
+    <header class="workspace-header">
+      <div class="header-left">
+        <span class="context-title">Trip Planning</span>
+        <span class="material-symbols-outlined divider">chevron_right</span>
+        <span class="workspace-name">Summer in Greece</span>
+      </div>
+      <div class="header-center">
+        <div class="search-bar">
+          <span class="material-symbols-outlined">search</span>
+          <input type="text" placeholder="Search locations, hotels, or flights...">
+          <span class="shortcut">⌘K</span>
+        </div>
+      </div>
+      <div class="header-right">
+        <button class="icon-btn"><span class="material-symbols-outlined">notifications</span></button>
+        <button class="primary-btn"><span class="material-symbols-outlined">add</span> New Trip</button>
+      </div>
+    </header>
+
+    <!-- Scrollable Content Area -->
+    <div class="content-scroll">
+      <div class="content-grid">
+        
+        <!-- 3. Large Immersive Hero Section -->
+        <section class="hero-section">
+          <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?q=80&w=2000&auto=format&fit=crop" alt="Santorini">
+            <div class="hero-overlay"></div>
+          </div>
+          
+          <div class="hero-content">
+            <div class="metadata-tags">
+              <span class="tag">Upcoming Trip</span>
+              <span class="tag"><span class="material-symbols-outlined text-icon">calendar_month</span> Aug 14 - Aug 28</span>
+            </div>
+            <h1 class="hero-title">Santorini, Greece</h1>
+            <p class="hero-desc">Experience the breathtaking sunsets and iconic blue-domed architecture of the Cyclades.</p>
+            
+            <div class="segmented-nav">
+              <button class="active">Overview</button>
+              <button>Itinerary</button>
+              <button>Hotels</button>
+              <button>Flights</button>
+            </div>
+          </div>
+          
+          <div class="floating-controls">
+            <button class="icon-btn glass"><span class="material-symbols-outlined">share</span></button>
+            <button class="icon-btn glass"><span class="material-symbols-outlined">favorite</span></button>
+          </div>
+        </section>
+
+        <!-- 4. Planning Assistant Panel -->
+        <aside class="assistant-panel">
+          <div class="assistant-header">
+            <span class="material-symbols-outlined icon">auto_awesome</span>
+            <h3>AI Planning Assistant</h3>
+            <button class="icon-btn small"><span class="material-symbols-outlined">close_fullscreen</span></button>
+          </div>
+          <div class="assistant-body">
+            <p class="chat-text">I noticed you're looking at Santorini for August. Do you want me to suggest romantic dinner spots in Oia or look up ferry schedules from Athens?</p>
+            <div class="suggestion-chips">
+              <button class="chip">Find Oia restaurants</button>
+              <button class="chip">Ferry schedules</button>
+              <button class="chip">Sunset viewpoints</button>
+            </div>
+          </div>
+          <div class="assistant-input">
+            <input type="text" placeholder="Ask anything about this trip...">
+            <button class="send-btn"><span class="material-symbols-outlined">send</span></button>
+          </div>
+        </aside>
+
+        <!-- 5. Analytics & Insights -->
+        <section class="analytics-workspace">
+          
+          <div class="card small environmental">
+            <div class="card-head">
+              <span class="material-symbols-outlined">thermostat</span>
+              <h4>Weather Forecast</h4>
+            </div>
+            <div class="card-metric">28°C</div>
+            <p class="card-meta">Sunny • Low 22°C</p>
+          </div>
+
+          <div class="card medium financial">
+            <div class="card-head">
+              <span class="material-symbols-outlined">account_balance_wallet</span>
+              <h4>Budget Tracker</h4>
+            </div>
+            <div class="card-metric">$4,250 <span>/ $5,000</span></div>
+            <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+            <p class="card-meta">You're on track. 15% remaining.</p>
+          </div>
+
+          <div class="card medium progress-card">
+            <div class="card-head">
+              <span class="material-symbols-outlined">check_circle</span>
+              <h4>Trip Readiness</h4>
+            </div>
+            <div class="card-metric">80%</div>
+            <div class="milestones">
+              <div class="milestone complete"><span class="material-symbols-outlined">check</span> Flights</div>
+              <div class="milestone complete"><span class="material-symbols-outlined">check</span> Hotels</div>
+              <div class="milestone pending"><span class="material-symbols-outlined">schedule</span> Activities</div>
+            </div>
+          </div>
+          
+          <div class="card small availability">
+            <div class="card-head">
+              <span class="material-symbols-outlined">groups</span>
+              <h4>Crowd Density</h4>
+            </div>
+            <div class="card-metric">High</div>
+            <p class="card-meta text-warning">Peak season (August)</p>
+          </div>
+
+          <div class="card wide logistics">
+            <div class="card-head">
+              <span class="material-symbols-outlined">flight_takeoff</span>
+              <h4>Flight Timeline</h4>
+            </div>
+            <div class="timeline">
+              <div class="point">
+                <div class="time">08:30 AM</div>
+                <div class="desc">JFK (New York)</div>
+              </div>
+              <div class="line"></div>
+              <div class="point">
+                <div class="time">10:15 AM (+1)</div>
+                <div class="desc">JTR (Santorini)</div>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+
+        <!-- 6. Map / Exploration Area -->
+        <section class="exploration-area">
+          <div class="map-container">
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop" class="map-placeholder" alt="Map">
+            <div class="map-overlay">
+              <div class="map-marker active" style="top: 40%; left: 30%;">
+                <span class="material-symbols-outlined">location_on</span>
+                <div class="tooltip">Oia Sunset Point</div>
+              </div>
+              <div class="map-marker" style="top: 60%; left: 50%;">
+                <span class="material-symbols-outlined">hotel</span>
+              </div>
+              <div class="map-marker" style="top: 30%; left: 70%;">
+                <span class="material-symbols-outlined">restaurant</span>
+              </div>
+            </div>
+            <div class="map-controls">
+              <button class="icon-btn"><span class="material-symbols-outlined">add</span></button>
+              <button class="icon-btn"><span class="material-symbols-outlined">remove</span></button>
+              <button class="icon-btn"><span class="material-symbols-outlined">my_location</span></button>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

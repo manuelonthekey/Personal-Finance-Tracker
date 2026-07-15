@@ -1,305 +1,349 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzBmMDA4MSIvPgo8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMiIgZmlsbD0iI2ZmOGMwMCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTEwIDEySDIyVjE4SDEwVjEyWiIgZmlsbD0iI2ZmZmZmZiIvPgo8Y2lyY2xlIGN4PSIxNiIgY3k9IjE0IiByPSIxLjUiIGZpbGw9IiMwZjAwODEiLz4KPHBhdGggZD0iTTE0IDI0QzE0IDI2LjIwOTEgMTUuNzkwOSAyOCAxOCAyOEMyMC4yMDkxIDI4IDIyIDI2LjIwOTEgMjIgMjQiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+">
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzBmMDA4MSIvPgo8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMiIgZmlsbD0iI2ZmOGMwMCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTEwIDEySDIyVjE4SDEwVjEyWiIgZmlsbD0iI2ZmZmZmZiIvPgo8Y2lyY2xlIGN4PSIxNiIgY3k9IjE0IiByPSIxLjUiIGZpbGw9IiMwZjAwODEiLz4KPHBhdGggZD0iTTE0IDI0QzE0IDI2LjIwOTEgMTUuNzkwOSAyOCAxOCAyOEMyMC4yMDkxIDI4IDIyIDI2LjIwOTEgMjIgMjQiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+">
-    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0iIzBmMDA4MSIvPgo8Y2lyY2xlIGN4PSI4IiBjeT0iOCIgcj0iNiIgZmlsbD0iI2ZmOGMwMCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjEiLz4KPHBhdGggZD0iTTUgNkgxMVY5SDVWNloiIGZpbGw9IiNmZmZmZmYiLz4KPGNpcmNsZSBjeD0iOCIgY3k9IjciIHI9IjAuNSIgZmlsbD0iIzBmMDA4MSIvPgo8cGF0aCBkPSJNNyAxMkM3IDEzLjEwNDYgNy44OTU0MyAxNCA5IDE0QzEwLjEwNDYgMTQgMTEgMTMuMTA0NiAxMSAxMiIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4=">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
-    />
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>MønieGlitçh - A Personal Finance App</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <title>MønieGlitçh - A Personal Finance App</title>
-  </head>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <body>
-    <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- 1. Navigation Rail -->
+  <nav class="nav-rail" role="navigation" aria-label="Main navigation">
+    <div class="nav-top">
+      <div class="nav-logo">
+        <span class="material-symbols-outlined">query_stats</span>
+      </div>
+      <ul class="nav-links">
+        <li class="active">
+          <a href="#" aria-label="Home">
+            <span class="material-symbols-outlined">home</span>
+            <span class="nav-label">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#tracker" aria-label="Tracker">
+            <span class="material-symbols-outlined">account_balance_wallet</span>
+            <span class="nav-label">Tracker</span>
+          </a>
+        </li>
+        <li>
+          <a href="#how-it-works" aria-label="How it works">
+            <span class="material-symbols-outlined">info</span>
+            <span class="nav-label">Features</span>
+          </a>
+        </li>
+        <li>
+          <a href="#invite" aria-label="Community">
+            <span class="material-symbols-outlined">group</span>
+            <span class="nav-label">Community</span>
+          </a>
+        </li>
+        <li>
+          <a href="./support.html" aria-label="Support">
+            <span class="material-symbols-outlined">help</span>
+            <span class="nav-label">Support</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-bottom">
+      <div class="nav-utilities">
+        <span class="material-symbols-outlined">settings</span>
+        <span class="nav-label">Settings</span>
+      </div>
+      <div class="user-avatar">
+        <img src="https://ui-avatars.com/api/?name=User&background=1B6B5C&color=fff" alt="User">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Application Wrapper -->
+  <main class="app-main" id="main-content">
     
-    <nav role="navigation" aria-label="Main navigation">
-      <div class="navbar">
-        <a href="#" class="logo"
-          ><i class="fas fa-chart-line"></i> MønieGlitçh</a
-        >
-        <ul class="nav-links">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#tracker">Use Tracker</a></li>
-          <li><a href="#how-it-works">How it works</a></li>
-          <li><a href="#invite">Community</a></li>
-          <li><a href="./support.html">Support</a></li>
-        </ul>
+    <!-- 2. Workspace Header -->
+    <header class="workspace-header">
+      <div class="header-left">
+        <span class="context-title">MønieGlitçh</span>
+        <span class="material-symbols-outlined divider">chevron_right</span>
+        <span class="workspace-name">Personal Finance Tracker</span>
+      </div>
+      
+      <div class="header-center">
+        <div class="search-bar">
+          <span class="material-symbols-outlined">search</span>
+          <input type="text" id="search-input" placeholder="Search transactions, budgets..." aria-label="Search the workspace">
+          <span class="shortcut">⌘K</span>
+        </div>
+      </div>
+      
+      <div class="header-right">
+        <button class="icon-btn" aria-label="Notifications"><span class="material-symbols-outlined">notifications</span></button>
+        <button class="primary-btn" onclick="document.getElementById('description').focus()"><span class="material-symbols-outlined">add</span> Quick Add</button>
         
-        <!-- Search Bar -->
-        <div class="search-container">
-          <div class="search-bar">
-            <i class="fas fa-search search-icon" aria-hidden="true"></i>
-            <input type="text" id="search-input" placeholder="Search" class="search-input" aria-label="Search the website" role="searchbox">
-            <div class="search-shortcut" aria-label="Press Ctrl+K or Cmd+K to search">
-              <span class="shortcut-key">⌘</span>
-              <span class="shortcut-key">K</span>
-              <span class="shortcut-separator">/</span>
-              <span class="shortcut-key">Ctrl</span>
-              <span class="shortcut-key">K</span>
+        <!-- Toggle button for mobile layouts to avoid JS crash -->
+        <div id="menu-toggle" style="display:none;"><i class="fas fa-bars"></i></div>
+      </div>
+    </header>
+
+    <!-- Scrollable Content Area -->
+    <div class="content-scroll">
+      <div class="content-grid">
+        
+        <!-- 3. Large Immersive Editorial Hero -->
+        <section class="hero-section">
+          <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=2000&auto=format&fit=crop" alt="Finance Abstract">
+            <div class="hero-overlay"></div>
+          </div>
+          
+          <div class="hero-content">
+            <div class="metadata-tags">
+              <span class="tag">Wealth Manager</span>
+              <span class="tag"><span class="material-symbols-outlined text-icon">shield</span> Safe & Secure</span>
+            </div>
+            <h1 class="hero-title">Take Control of Your Wealth</h1>
+            <p class="hero-desc">Track income and expenses effortlessly. Manage your budget, set goals, and make smarter decisions for a secure future.</p>
+            
+            <div class="segmented-nav">
+              <button class="active">Overview</button>
+              <button onclick="document.getElementById('table-part').scrollIntoView({behavior: 'smooth'})">Transactions</button>
+              <button onclick="document.getElementById('how-it-works').scrollIntoView({behavior: 'smooth'})">Features</button>
             </div>
           </div>
-        </div>
-        
-        <div class="buttons">
-          <a href="./login.html" class="btn-head"
-            ><i class="fas fa-sign-in-alt"></i> Log In</a
-          >
-          <a href="./sign-up.html" class="btn-head"
-            ><i class="fas fa-user-plus"></i> Sign Up</a>
           
-        </div>
-        <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" role="button" tabindex="0">
-            <i class="fas fa-bars" aria-hidden="true"></i>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Landing Page Content -->
-    <main id="main-content" role="main">
-    <section class="section-box">
-      <div class="main-landing">
-        <div class="content">
-          <h1 class="under-welcome-h1">Take Control of Your Finances</h1>
-          <div class="under-h1"></div>
-          <p class="under-welcome-p">
-            Track your income and expenses effortlessly. Manage your budget, set
-            financial goals, and make smarter decisions for more secure future.
-          </p>
-          <a href="./sign-up.html" class="under-welcome-btn">Sign Up Now</a>
-        </div>
-        <div class="under-welcome-image">
-          <img src="./assets/makeme.png" alt="Power Finance" />
-        </div>
-      </div>
-    </section>
-    <br />
-    <div class="arrow">
-      <a href="#tracker " class="scroll-link">
-        <span></span>
-      </a>
-    </div>
-
-    <section class="main-content" id="tracker">
-      <div class="head-text">
-        <h1>Access Your MønieGlitçh</h1>
-        <div class="under-head-text"></div>
-      </div>
-      <br />
-
-      <div class="tracker-part">
-        <div class="tracker-balance">
-          Current Balance: <span id="balance" class="current-balance"></span>
-        </div>
-
-        <div class="currency-filter">
-          <div class="filter-left">
-            <label for="currency">Select Currency:</label>
-            <select id="currency" onchange="updateBalance()">
-              <option value="USD">USD</option>
-              <option value="EUR">EUR</option>
-              <option value="INR" selected>INR</option>
-            </select>
+          <div class="floating-controls">
+            <button class="icon-btn glass" onclick="handleDownload()" title="Export Data"><span class="material-symbols-outlined">download</span></button>
+            <button class="icon-btn glass" onclick="document.getElementById('invite').scrollIntoView({behavior: 'smooth'})" title="Share Community"><span class="material-symbols-outlined">share</span></button>
           </div>
-          <div class="filter-right">
-            <label for="text" class="date-box">Choose Date:</label>
-            <input type="date" id="date" placeholder="Date" />
+        </section>
+
+        <!-- 4. Planning Assistant Panel -->
+        <aside class="assistant-panel">
+          <div class="assistant-header">
+            <span class="material-symbols-outlined icon purple-icon">auto_awesome</span>
+            <h3>AI Finance Assistant</h3>
+            <button class="icon-btn small" aria-label="Close Assistant"><span class="material-symbols-outlined">close_fullscreen</span></button>
           </div>
-        </div>
+          <div class="assistant-body">
+            <p class="chat-text">I've analyzed your June spending patterns. You spent 12% less on dining compared to last month. Would you like me to generate a PDF summary?</p>
+            <div class="suggestion-chips">
+              <button class="chip" onclick="handleDownload()">Export PDF Summary</button>
+              <button class="chip" onclick="document.getElementById('amount').value=5000; document.getElementById('description').value='Savings Deposit'; document.getElementById('type').value='income';">Quick Deposit Chip</button>
+              <button class="chip" onclick="document.getElementById('currency').value='USD'; updateBalance();">Switch to USD View</button>
+            </div>
+          </div>
+          <div class="assistant-input">
+            <input type="text" placeholder="Ask about budgets, tips, forecasts...">
+            <button class="send-btn" aria-label="Send message"><span class="material-symbols-outlined">send</span></button>
+          </div>
+        </aside>
 
-        <div class="transaction-form">
-          <input type="text" id="description" placeholder="Description" />
-          <input type="number" id="amount" placeholder="Amount" />
-          <select id="type">
-            <option value="income">Income</option>
-            <option value="expense">Expense</option>
-          </select>
-          <button onclick="addTransaction()">Add Transaction</button>
-          <button onclick="handleDownload()">Export</button>
-        </div>
-        <div class="table-part" id="table-part">
-          <table id="transaction-table">
-            <tr>
-              <th>Date</th>
-              <th>Description</th>
-              <th>Amount</th>
-              <th>Type</th>
-              <th>Action</th>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </section>
+        <!-- 5. Analytics Workspace -->
+        <section class="analytics-workspace" id="tracker">
+          
+          <!-- Current Balance Card -->
+          <div class="card small balance-card">
+            <div class="card-head">
+              <span class="material-symbols-outlined">account_balance_wallet</span>
+              <h4>Current Balance</h4>
+            </div>
+            <div class="card-metric" id="balance">0.00</div>
+            
+            <div class="currency-filter">
+              <div class="filter-group">
+                <label for="currency">Currency</label>
+                <select id="currency" onchange="updateBalance()">
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="INR" selected>INR</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label for="date">Filter Date</label>
+                <input type="date" id="date">
+              </div>
+            </div>
+          </div>
 
-    <section class="how-it-works" id="how-it-works">
-      <div class="head-text">
-        <h1>How it works</h1>
-        <div class="under-head-text"></div>
-      </div>
-      <br />
-      <div class="working-content">
-        <div class="left-working">
-          <h5 class="working-head">
-            Experience the power of
-            <span class="text-lightBlue">MønieGlitçh</span>
-          </h5>
-          <ul class="ul-items">
-            <li class="check-list-items">
-              <i data-feather="check" class="feather icon-check"></i>
-              <span>Track effortlessly</span>
-            </li>
-            <li class="check-list-items">
-              <i data-feather="check" class="feather icon-check"></i>
-              <span>Control transactions</span>
-            </li>
-            <li class="check-list-items">
-              <i data-feather="check" class="feather icon-check"></i>
-              <span>Customize currencies</span>
-            </li>
-            <li class="check-list-items">
-              <i class="icon-check" data-feather="check"></i>
-              <span>Edit with ease</span>
-            </li>
-            <li class="check-list-items">
-              <i data-feather="check" class="feather icon-check"></i>
-              <span>Real-time balance</span>
-            </li>
-            <li class="check-list-items">
-              <i data-feather="check" class="feather icon-check"></i>
-              <span>Secure data protection</span>
-            </li>
-          </ul>
-          <a href="./sign-up.html" class="sign-up-button-btn">Sign Up Now</a>
-        </div>
-        <div class="right-working-image">
-          <img
-            src="./assets/how-it-works.png"
-            target="_self"
-            alt="Power Finance"
-          />
-        </div>
-      </div>
-    </section>
+          <!-- Budget Tracker Card -->
+          <div class="card medium budget-card">
+            <div class="card-head">
+              <span class="material-symbols-outlined">donut_large</span>
+              <h4>Monthly Budget Goal</h4>
+            </div>
+            <div class="card-metric">$4,250 <span>/ $5,000</span></div>
+            <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+            <p class="card-meta">You're on track. 15% budget margin remaining.</p>
+          </div>
 
-    <!-- Invite Section -->
-    <section class="invite-section" id="invite">
-      <div class="head-text">
-        <h1>Community Invite</h1>
-        <div class="under-head-text"></div>
+          <!-- Quick Add Transaction Card -->
+          <div class="card medium transaction-form-card">
+            <div class="card-head">
+              <span class="material-symbols-outlined">add_card</span>
+              <h4>Quick Transaction Form</h4>
+            </div>
+            <div class="transaction-form">
+              <input type="text" id="description" placeholder="Description" aria-label="Transaction description">
+              <input type="number" id="amount" placeholder="Amount" aria-label="Transaction amount">
+              <select id="type" aria-label="Transaction type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+              </select>
+              <div class="form-actions">
+                <button id="add-transaction-btn" onclick="addTransaction()">Add</button>
+                <button id="save-transaction-btn" style="display: none;" onclick="saveTransaction()">Save</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Transaction Log Card -->
+          <div class="card wide table-card">
+            <div class="card-head">
+              <span class="material-symbols-outlined">list_alt</span>
+              <h4>Recent Transactions Log</h4>
+            </div>
+            <div class="table-part" id="table-part">
+              <table id="transaction-table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Filled dynamically by JavaScript -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+        </section>
+
+
+
+        <!-- 7. Supporting Modules -->
+        <!-- How it Works section -->
+        <section class="how-it-works" id="how-it-works">
+          <div class="card-head">
+            <span class="material-symbols-outlined text-icon">emoji_objects</span>
+            <h2>How MønieGlitçh Works</h2>
+          </div>
+          <div class="working-content">
+            <div class="left-working">
+              <ul class="ul-items">
+                <li class="check-list-items">
+                  <i data-feather="check" class="feather icon-check"></i>
+                  <span>Track effortlessly</span>
+                </li>
+                <li class="check-list-items">
+                  <i data-feather="check" class="feather icon-check"></i>
+                  <span>Control transactions</span>
+                </li>
+                <li class="check-list-items">
+                  <i data-feather="check" class="feather icon-check"></i>
+                  <span>Customize currencies</span>
+                </li>
+                <li class="check-list-items">
+                  <i data-feather="check" class="feather icon-check"></i>
+                  <span>Edit with ease</span>
+                </li>
+                <li class="check-list-items">
+                  <i data-feather="check" class="feather icon-check"></i>
+                  <span>Real-time balance calculations</span>
+                </li>
+              </ul>
+            </div>
+            <div class="right-working-image">
+              <img src="./assets/how-it-works.png" alt="Analytics Summary">
+            </div>
+          </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="invite-section" id="invite">
+          <div class="invite-container">
+            <div class="invite-card">
+              <div class="invite-header">
+                <h2>Join the MønieGlitçh Community</h2>
+              </div>
+              <div class="invite-content">
+                <div class="email-invite">
+                  <input type="email" id="invite-email" placeholder="Enter colleague's email" class="email-input">
+                  <button onclick="sendEmailInvite()" class="send-invite-btn">Send Invite</button>
+                </div>
+                <div class="social-share">
+                  <button onclick="shareOnLinkedIn()" class="linkedin-share-btn"><i class="fab fa-linkedin-in"></i> Share</button>
+                  <button onclick="shareOnTwitter()" class="twitter-share-btn"><i class="fab fa-twitter"></i> Tweet</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
-      <br />
       
-      <div class="invite-container">
-        <div class="invite-card">
-          <div class="invite-header">
-            <h2>Join our community</h2>
-          </div>
-          
-          <div class="invite-content">
-            <div class="email-invite">
-              <input 
-                type="email" 
-                id="invite-email" 
-                placeholder="Enter an email address" 
-                class="email-input"
-              />
-              <button onclick="sendEmailInvite()" class="send-invite-btn">
-                Send invite
-              </button>
+      <footer role="contentinfo">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <div class="footer-logo">
+                <i class="fas fa-chart-line"></i>
+                <h3>MønieGlitçh</h3>
+              </div>
+              <p class="footer-description">
+                Take control of your finances with our comprehensive personal finance tracking tool. Manage your income, expenses, and financial goals effortlessly.
+              </p>
+              <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              </div>
             </div>
             
-            <div class="social-share">
-              <button onclick="shareOnLinkedIn()" class="linkedin-share-btn">
-                <i class="fab fa-linkedin-in"></i> Share
-              </button>
-              <button onclick="shareOnTwitter()" class="twitter-share-btn">
-                <i class="fab fa-twitter"></i> Tweet
-              </button>
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul class="footer-links">
+                <li><a href="#tracker">Use Tracker</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#invite">Community</a></li>
+                <li><a href="./support.html">Support</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <div class="footer-bottom-content">
+              <p>&copy; 2026 MønieGlitçh. All rights reserved.</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    </main>
+      </footer>
+    </div>
+  </main>
 
-<footer role="contentinfo">
-      <div class="footer-container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <div class="footer-logo">
-              <i class="fas fa-chart-line"></i>
-              <h3>MønieGlitçh</h3>
-            </div>
-            <p class="footer-description">
-              Take control of your finances with our comprehensive personal finance tracking tool. 
-              Manage your income, expenses, and financial goals effortlessly.
-            </p>
-            <div class="social-links">
-              <a href="#" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-github"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-            </div>
-          </div>
-          
-          <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul class="footer-links">
-              <li><a href="#tracker">Use Tracker</a></li>
-              <li><a href="#how-it-works">How it Works</a></li>
-              <li><a href="#invite">Community</a></li>
-              <li><a href="./support.html">Support</a></li>
-            </ul>
-          </div>
-          
-          <div class="footer-section">
-            <h4>Resources</h4>
-            <ul class="footer-links">
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Help Center</a></li>
-            </ul>
-          </div>
-          
-          <div class="footer-section">
-            <h4>Contact Info</h4>
-            <div class="contact-info">
-              <p><i class="fas fa-envelope"></i> support@financetracker.com</p>
-              <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-              <p><i class="fas fa-map-marker-alt"></i> New York, NY</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="footer-bottom">
-          <div class="footer-bottom-content">
-            <p>&copy; 2025 MønieGlitçh. All rights reserved.</p>
-            <!-- Developer Credit Removed -->
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script>
-      feather.replace();
-    </script>
-    <script src="script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/your-font-awesome-kit.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script>
+    feather.replace();
+  </script>
+  <script src="script.js"></script>
+</body>
 </html>
